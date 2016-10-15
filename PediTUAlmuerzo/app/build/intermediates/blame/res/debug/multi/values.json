@@ -1,0 +1,361 @@
+[
+    {
+        "outputFile": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 55,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 33,
+                    "endOffset": 198
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 338,
+                        "endColumn": 33,
+                        "endOffset": 367
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 203,
+                    "endColumn": 56,
+                    "endOffset": 255
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 490,
+                        "endColumn": 56,
+                        "endOffset": 542
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 260,
+                    "endColumn": 62,
+                    "endOffset": 318
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 373,
+                        "endColumn": 62,
+                        "endOffset": 431
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 323,
+                    "endColumn": 51,
+                    "endOffset": 370
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 437,
+                        "endColumn": 51,
+                        "endOffset": 484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 375,
+                    "endColumn": 47,
+                    "endOffset": 418
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 548,
+                        "endColumn": 47,
+                        "endOffset": 591
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 423,
+                    "endColumn": 71,
+                    "endOffset": 490
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 597,
+                        "endColumn": 71,
+                        "endOffset": 664
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 495,
+                    "endColumn": 52,
+                    "endOffset": 543
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 168,
+                        "endColumn": 52,
+                        "endOffset": 216
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 548,
+                    "endColumn": 53,
+                    "endOffset": 597
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 53,
+                        "endOffset": 108
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 602,
+                    "endColumn": 52,
+                    "endOffset": 650
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 114,
+                        "endColumn": 52,
+                        "endOffset": 162
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 655,
+                    "endColumn": 114,
+                    "endOffset": 765
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 222,
+                        "endColumn": 114,
+                        "endOffset": 332
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 770,
+                    "endLine": 16,
+                    "endColumn": 12,
+                    "endOffset": 853
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 250,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 335
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 858,
+                    "endLine": 20,
+                    "endColumn": 12,
+                    "endOffset": 1045
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 376,
+                        "endLine": 14,
+                        "endColumn": 12,
+                        "endOffset": 566
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1050,
+                    "endLine": 24,
+                    "endColumn": 12,
+                    "endOffset": 1258
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 606,
+                        "endLine": 21,
+                        "endColumn": 12,
+                        "endOffset": 829
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1263,
+                    "endLine": 28,
+                    "endColumn": 12,
+                    "endOffset": 1411
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1003,
+                        "endLine": 30,
+                        "endColumn": 12,
+                        "endOffset": 1154
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1416,
+                    "endLine": 31,
+                    "endColumn": 12,
+                    "endOffset": 1544
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\themes.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 116,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 246
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1549,
+                    "endLine": 34,
+                    "endColumn": 12,
+                    "endOffset": 1697
+                },
+                "from": {
+                    "file": "C:\\Users\\Manuel\\AndroidStudioProjects\\PediTUAlmuerzo\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 841,
+                        "endLine": 25,
+                        "endColumn": 12,
+                        "endOffset": 991
+                    }
+                }
+            }
+        ]
+    }
+]
