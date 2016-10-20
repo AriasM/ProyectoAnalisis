@@ -14,8 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/btnGo"
-        android:layout_toEndOf="@+id/btnGo"
         android:layout_marginTop="128dp">
 
         <Button
@@ -23,19 +21,18 @@
             android:textColor="#660808"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button4"
-            android:contentDescription="Cenas" />
+            android:id="@+id/btnDesayunos" />
 
         <Button
             android:text="@string/btnAlmuerzos"
             android:textColor="#660808"
             android:layout_width="match_parent"
-            android:onClick="redireccionar(MainActivity)"
+            android:onClick="redireccionar"
             android:layout_height="wrap_content"
-            android:id="@+id/button5" />
+            android:id="@+id/btnAlmuerzos" />
 
         <Button
-            android:id="@+id/btnGo"
+            android:id="@+id/btnACenas"
             android:textColor="#660808"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
