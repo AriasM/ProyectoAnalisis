@@ -6,15 +6,54 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.peditualmuerzo.MainActivity" >
+    tools:context="com.peditualmuerzo.MainActivity"
+    android:background="@drawable/fondo">
 
-    <Button
-        android:id="@+id/btnGo"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnGo"
+        android:layout_toEndOf="@+id/btnGo"
+        android:layout_marginTop="128dp">
+
+        <Button
+            android:text="@string/btnDesayunos"
+            android:textColor="#660808"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:contentDescription="Cenas" />
+
+        <Button
+            android:text="@string/btnAlmuerzos"
+            android:textColor="#660808"
+            android:layout_width="match_parent"
+            android:onClick="redireccionar(MainActivity)"
+            android:layout_height="wrap_content"
+            android:id="@+id/button5" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:textColor="#660808"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnACenas"
+            android:layout_marginBottom="100dp"
+            android:layout_alignParentBottom="true"
+            android:linksClickable="false" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/TextoInicio"
+        android:textColor="#660808"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/Go" 
-        android:onClick="redireccionar"/>
+        android:layout_marginTop="90dp"
+        android:id="@+id/textView" />
 
 </RelativeLayout>
