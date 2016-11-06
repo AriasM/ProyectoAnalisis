@@ -18,6 +18,7 @@
 
         <Button
             android:text="@string/btnDesayunos"
+            android:onClick="redireccionar"
             android:textColor="#660808"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,12 +28,13 @@
             android:text="@string/btnAlmuerzos"
             android:textColor="#660808"
             android:layout_width="match_parent"
-            android:onClick="redireccionar"
+            android:onClick="redireccionarHistorial"
             android:layout_height="wrap_content"
             android:id="@+id/btnAlmuerzos" />
 
         <Button
             android:id="@+id/btnACenas"
+            android:onClick="redireccionar"
             android:textColor="#660808"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,6 +53,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
-        android:id="@+id/textView" />
+        android:id="@+id/mensajeTextView" />
 
 </RelativeLayout>

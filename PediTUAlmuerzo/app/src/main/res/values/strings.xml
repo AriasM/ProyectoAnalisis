@@ -14,5 +14,7 @@
     <string name="Observaciones">Observaciones:</string>
     <string name="Solicitar">Solicitar</string>
     <string name="SolicitarActivity">Solicitud de alimentación</string>
+    <string name="title_activity_historial">HistorialActivity</string>
+    <string name="title_activity_detalles_pedido">DetallesPedidoActivity</string>
 
 </resources>

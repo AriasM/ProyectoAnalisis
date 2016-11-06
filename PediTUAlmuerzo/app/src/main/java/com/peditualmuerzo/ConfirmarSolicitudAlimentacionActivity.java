@@ -53,8 +53,8 @@ public class ConfirmarSolicitudAlimentacionActivity extends Activity {
 				itemPedido.setCantidad(Integer.parseInt(cantidad));
 				itemPedido.setComentarios(comentarios);
 				Plato plato = new Plato();
-				plato.setNombrePlato(platoSeleccionado);
-				itemPedido.getPlatos().add(plato);
+				plato.setNombrePlatillo(platoSeleccionado);
+				itemPedido.setPlato(plato);
 
 				Pedido pedido = new Pedido();
 				pedido.getItems().add(itemPedido);
