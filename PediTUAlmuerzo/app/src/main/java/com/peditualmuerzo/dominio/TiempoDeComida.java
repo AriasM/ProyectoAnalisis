@@ -1,12 +1,13 @@
 package com.peditualmuerzo.dominio;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TiempoDeComida {
+public class TiempoDeComida implements Serializable{
 	private String nombreTiempoComida;
 	private List<Plato> platos;
-	
+
 	public TiempoDeComida() {
 		super();
 		this.platos = new ArrayList<Plato>();
@@ -27,6 +28,6 @@ public class TiempoDeComida {
 	public void setPlatos(List<Plato> platos) {
 		this.platos = platos;
 	}
-	
-	
+
+
 }

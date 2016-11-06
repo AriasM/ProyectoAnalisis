@@ -1,16 +1,25 @@
 package com.peditualmuerzo.dominio;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ItemPedido {
+public class ItemPedido implements Serializable{
 	private int cantidad;
 	private String comentarios;
-	private List<Plato> platos;
-	
+	private Plato plato;
+	private float precioPlatillo;
+
+	public float getPrecioPlatillo() {
+		return precioPlatillo;
+	}
+
+	public void setPrecioPlatillo(float precioPlatillo) {
+		this.precioPlatillo = precioPlatillo;
+	}
+
 	public ItemPedido() {
-		super();
-		this.platos = new ArrayList<Plato>();
+		this.plato = new Plato();
 	}
 
 	public int getCantidad() {
@@ -21,14 +30,6 @@ public class ItemPedido {
 		this.cantidad = cantidad;
 	}
 
-	public List<Plato> getPlatos() {
-		return platos;
-	}
-
-	public void setPlatos(List<Plato> platos) {
-		this.platos = platos;
-	}
-
 	public String getComentarios() {
 		return comentarios;
 	}
@@ -36,4 +37,13 @@ public class ItemPedido {
 	public void setComentarios(String comentarios) {
 		this.comentarios = comentarios;
 	}
+
+	public Plato getPlato() {
+		return plato;
+	}
+
+	public void setPlato(Plato plato) {
+		this.plato = plato;
+	}
 }
+

@@ -1,11 +1,13 @@
 package com.peditualmuerzo.dominio;
 
-public class ItemPlatoComponente {
+import java.io.Serializable;
+
+public class ItemPlatoComponente implements Serializable{
+
 	private ComponentePlato componente;
 
-	public ItemPlatoComponente(ComponentePlato componente) {
-		super();
-		this.componente = componente;
+	public ItemPlatoComponente() {
+
 	}
 
 	public ComponentePlato getComponente() {
@@ -15,5 +17,5 @@ public class ItemPlatoComponente {
 	public void setComponente(ComponentePlato componente) {
 		this.componente = componente;
 	}
-	
+
 }
