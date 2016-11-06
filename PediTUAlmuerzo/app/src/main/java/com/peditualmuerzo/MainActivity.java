@@ -6,18 +6,22 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.firebase.client.Firebase;
+
 import com.peditualmuerzo.dataAccess.PedidoDataFirebase;
 
 public class MainActivity extends Activity {
+
+	private TextView  mensajeTextView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		Firebase.setAndroidContext(this);
-		
+
 	}
 
 	@Override
@@ -38,9 +42,14 @@ public class MainActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
+
 	public void redireccionar(View view){
 		Intent intent = new Intent(this, ConfirmarSolicitudAlimentacionActivity.class);
+		startActivity(intent);
+	}
+
+	public void redireccionarHistorial(View view){
+		Intent intent = new Intent(this, HistorialActivity.class);
 		startActivity(intent);
 	}
 }

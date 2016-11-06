@@ -1,0 +1,7 @@
+#Sat Nov 05 22:04:23 CST 2016
+base.0=F\:\\U\\Analisis\\ProyectoAnalisis\\PediTUAlmuerzo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_c62bed9997c80d2a6ad17ad8abdce87af37470fc
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=F\:\\U\\Analisis\\ProyectoAnalisis\\PediTUAlmuerzo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_8da5c10c90f83c1ca0b5a139a3b93f15a96dc082\\classes.dex
+base.1=F\:\\U\\Analisis\\ProyectoAnalisis\\PediTUAlmuerzo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_8da5c10c90f83c1ca0b5a139a3b93f15a96dc082
+file.0=F\:\\U\\Analisis\\ProyectoAnalisis\\PediTUAlmuerzo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_c62bed9997c80d2a6ad17ad8abdce87af37470fc\\classes.dex
