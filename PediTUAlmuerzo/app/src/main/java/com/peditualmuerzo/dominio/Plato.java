@@ -6,29 +6,29 @@ import java.util.List;
 
 public class Plato implements Serializable{
 
-	private String idPlatillo;
-	private String nombrePlatillo;
+	private String idPlato;
+	private String nombrePlato;
 	private boolean opcional;
-	private float precioPlatillo;
-	private TiempoDeComida categoria;
+	private float precioPlato;
+	private TiempoDeComida tiempoDeComida;
 	private Dia dia;
 	private Semana semana;
 	private List<ItemPlatoComponente> items;
 
 	public Plato() {
 
-		categoria = new TiempoDeComida();
+		tiempoDeComida = new TiempoDeComida();
 		dia = new Dia();
 		semana = new Semana();
 		items = new ArrayList<ItemPlatoComponente>();
 	}
 
-	public String getIdPlatillo() {
-		return idPlatillo;
+	public String getIdPlato() {
+		return idPlato;
 	}
 
-	public void setIdPlatillo(String idPlatillo) {
-		this.idPlatillo = idPlatillo;
+	public void setIdPlato(String idPlato) {
+		this.idPlato = idPlato;
 	}
 
 	public boolean isOpcional() {
@@ -39,20 +39,20 @@ public class Plato implements Serializable{
 		this.opcional = opcional;
 	}
 
-	public String getNombrePlatillo() {
-		return nombrePlatillo;
+	public String getNombrePlato() {
+		return nombrePlato;
 	}
 
-	public void setNombrePlatillo(String nombrePlatillo) {
-		this.nombrePlatillo = nombrePlatillo;
+	public void setNombrePlato(String nombrePlatillo) {
+		this.nombrePlato = nombrePlatillo;
 	}
 
-	public float getPrecioPlatillo() {
-		return precioPlatillo;
+	public float getPrecioPlato() {
+		return precioPlato;
 	}
 
-	public void setPrecioPlatillo(float precioPlatillo) {
-		this.precioPlatillo = precioPlatillo;
+	public void setPrecioPlato(float precioPlato) {
+		this.precioPlato = precioPlato;
 	}
 
 	public List<ItemPlatoComponente> getItems() {
@@ -63,12 +63,12 @@ public class Plato implements Serializable{
 		this.items = items;
 	}
 
-	public TiempoDeComida getCategoria() {
-		return categoria;
+	public TiempoDeComida getTiempoDeComida() {
+		return tiempoDeComida;
 	}
 
-	public void setCategoria(TiempoDeComida categoria) {
-		this.categoria = categoria;
+	public void setTiempoDeComida(TiempoDeComida tiempoDeComida) {
+		this.tiempoDeComida = tiempoDeComida;
 	}
 
 	public Dia getDia() {

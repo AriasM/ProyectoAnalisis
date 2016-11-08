@@ -8,16 +8,16 @@ import java.io.Serializable;
 
 public class Semana implements Serializable {
 
-    private String numeroSemana;
+    private int numeroSemana;
 
     public Semana() {
     }
 
-    public String getNumeroSemana() {
+    public int getNumeroSemana() {
         return numeroSemana;
     }
 
-    public void setNumeroSemana(String numeroSemana) {
+    public void setNumeroSemana(int numeroSemana) {
         this.numeroSemana = numeroSemana;
     }
 }

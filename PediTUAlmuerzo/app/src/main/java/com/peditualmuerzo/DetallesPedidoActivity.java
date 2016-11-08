@@ -25,11 +25,12 @@ import java.util.List;
 
 public class DetallesPedidoActivity extends Activity {
 
-    private DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
-    private DatabaseReference mensajeRef = ref.child("platillos");
     private ListView historialListView;
     private TextView tvFechaPedido;
     private TextView tvEstadoPedido;
+    private Pedido pedido;
+    private DatabaseReference ref;
+    private DatabaseReference mensajeRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +39,14 @@ public class DetallesPedidoActivity extends Activity {
         historialListView = (ListView) findViewById(R.id.historialView);
         tvFechaPedido = (TextView) findViewById(R.id.tvFechaPedido);
         tvEstadoPedido = (TextView) findViewById(R.id.tvEstadoPedido);
+        ref = FirebaseDatabase.getInstance().getReference();
+        mensajeRef = ref.child("Platos");
+        pedido = (Pedido) getIntent().getExtras().getSerializable("pedido");
     }
 
     public void onStart (){
 
         super.onStart();
-
-        final Pedido pedido = (Pedido) getIntent().getExtras().getSerializable("pedido");
 
         mensajeRef.addValueEventListener(new ValueEventListener() {
 
@@ -57,11 +59,11 @@ public class DetallesPedidoActivity extends Activity {
 
                     DataSnapshot data =ite.next();
                     Plato plato  = data.getValue(Plato.class);
-                    plato.setIdPlatillo(data.getKey());
+                    plato.setIdPlato(data.getKey());
 
                     for (ItemPedido itemLista:pedido.getItems()) {
 
-                        if(itemLista.getPlato().getIdPlatillo().equals(plato.getIdPlatillo())){
+                        if(itemLista.getPlato().getIdPlato().equals(plato.getIdPlato())){
 
                             itemLista.setPlato(plato);
                         }
@@ -113,8 +115,8 @@ public class DetallesPedidoActivity extends Activity {
             tvPrecioPlato = (TextView) convertView.findViewById(R.id.tvPrecioPlato);
 
             tvComentarios.setText("Comentarios adicionales: "+itemsPedido.get(position).getComentarios());
-            tvPrecioPlato.setText("Precio: "+itemsPedido.get(position).getPrecioPlatillo());
-            tvNombrePlato.setText("Platillo: "+itemsPedido.get(position).getPlato().getNombrePlatillo());
+            tvPrecioPlato.setText("Precio: "+itemsPedido.get(position).getPrecioPlato());
+            tvNombrePlato.setText("Platillo: "+itemsPedido.get(position).getPlato().getNombrePlato());
             tvCantidad.setText("Cantidad: "+itemsPedido.get(position).getCantidad());
 
             String componentes = "Componentes del plato: ";

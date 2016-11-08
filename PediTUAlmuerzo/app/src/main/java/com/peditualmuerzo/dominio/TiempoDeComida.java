@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TiempoDeComida implements Serializable{
-	private String nombreTiempoComida;
+	private String nombreTiempoDeComida;
 	private List<Plato> platos;
 
 	public TiempoDeComida() {
@@ -13,12 +13,12 @@ public class TiempoDeComida implements Serializable{
 		this.platos = new ArrayList<Plato>();
 	}
 
-	public String getNombreTiempoComida() {
-		return nombreTiempoComida;
+	public String getNombreTiempoDeComida() {
+		return nombreTiempoDeComida;
 	}
 
-	public void setNombreTiempoComida(String nombreTiempoComida) {
-		this.nombreTiempoComida = nombreTiempoComida;
+	public void setNombreTiempoDeComida(String nombreTiempoDeComida) {
+		this.nombreTiempoDeComida = nombreTiempoDeComida;
 	}
 
 	public List<Plato> getPlatos() {

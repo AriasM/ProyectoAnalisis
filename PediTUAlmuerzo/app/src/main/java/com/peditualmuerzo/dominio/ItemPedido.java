@@ -8,14 +8,14 @@ public class ItemPedido implements Serializable{
 	private int cantidad;
 	private String comentarios;
 	private Plato plato;
-	private float precioPlatillo;
+	private float precioPlato;
 
-	public float getPrecioPlatillo() {
-		return precioPlatillo;
+	public float getPrecioPlato() {
+		return precioPlato;
 	}
 
-	public void setPrecioPlatillo(float precioPlatillo) {
-		this.precioPlatillo = precioPlatillo;
+	public void setPrecioPlato(float precioPlato) {
+		this.precioPlato = precioPlato;
 	}
 
 	public ItemPedido() {

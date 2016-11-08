@@ -37,8 +37,9 @@ public class HistorialActivity extends Activity {
     private ListView historialListView;
     private List<Pedido> pedidos;
     private int posicion;
-    private DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
-    private DatabaseReference mensajeRef = ref.child("Pedidos");
+    private DatabaseReference ref;
+    private DatabaseReference mensajeRef;
+    private ValueEventListener listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,13 +47,15 @@ public class HistorialActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historial);
         historialListView = (ListView) findViewById(R.id.historialView);
+        ref = FirebaseDatabase.getInstance().getReference();
+        mensajeRef = ref.child("Pedidos");
     }
     public void onStart (){
 
         super.onStart();
         pedidos = new ArrayList<Pedido>();
 
-        mensajeRef.addValueEventListener(new ValueEventListener() {
+        listener = mensajeRef.addValueEventListener(new ValueEventListener() {
 
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -71,6 +74,7 @@ public class HistorialActivity extends Activity {
 
                 PedidoAdapter pedidoAdapter = new PedidoAdapter(getApplicationContext(), R.layout.row, pedidos);
                 historialListView.setAdapter(pedidoAdapter);
+
             }
 
             @Override
@@ -78,6 +82,10 @@ public class HistorialActivity extends Activity {
 
             }
         });
+    }
+
+    public void onClose(){
+        mensajeRef.removeEventListener(listener);
     }
 
     public void redireccionar(View view){
@@ -125,7 +133,7 @@ public class HistorialActivity extends Activity {
 
             for (ItemPedido item:pedidos.get(position).getItems()) {
 
-                costoPedido += (item.getCantidad()*item.getPrecioPlatillo());
+                costoPedido += (item.getCantidad()*item.getPrecioPlato());
             }
 
             totalPedido.setText("Costo del pedido: "+costoPedido);
