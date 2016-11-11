@@ -47,6 +47,12 @@
         <activity
             android:name="com.peditualmuerzo.DetallesPedidoActivity"
             android:label="@string/title_activity_detalles_pedido" />
+        <activity
+            android:name="com.peditualmuerzo.ConsultarPlatosSolicitarActivity"
+            android:label="@string/title_activity_consultar_platos_solicitar" />
+        <activity
+            android:name="com.peditualmuerzo.ModificarPedidoRealizadoActivity"
+            android:label="@string/title_activity_modificar_pedido_realizado" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

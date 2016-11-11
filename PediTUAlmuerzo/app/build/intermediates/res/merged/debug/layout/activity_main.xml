@@ -18,7 +18,7 @@
 
         <Button
             android:text="@string/btnDesayunos"
-            android:onClick="redireccionar"
+            android:onClick="redireccionarHistorial"
             android:textColor="#660808"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             android:text="@string/btnAlmuerzos"
             android:textColor="#660808"
             android:layout_width="match_parent"
-            android:onClick="redireccionarHistorial"
+            android:onClick="redireccionar"
             android:layout_height="wrap_content"
             android:id="@+id/btnAlmuerzos" />
 

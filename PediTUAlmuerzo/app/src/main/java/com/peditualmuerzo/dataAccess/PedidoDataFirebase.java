@@ -1,24 +1,43 @@
 package com.peditualmuerzo.dataAccess;
 
+import android.content.Context;
+
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.peditualmuerzo.dominio.Pedido;
+
 public class PedidoDataFirebase implements PedidoData{
-	public static final String FIREBASE_URL = "https://pedi-tu-almuerzo.firebaseio.com/";
+	public static final String FIREBASE_URL = "https://pedi-tu-almuerzo-c34ef.firebaseio.com/";
+	final public static String PLATILLO_REFERENCE="Platos";
+	final public static String CONTROL_REFERENCE="control";
+	final public static String PEDIDOS_REFERENCE="Pedidos";
 
-	@Override
-	public void insertarPedido() {
-		// TODO Auto-generated method stub
-		
+	private final Context context;
+	String estadoTransaccion = "Pedido solicitado con éxito!";
+
+	public PedidoDataFirebase(Context context){
+		this.context = context;
 	}
 
 	@Override
-	public void eliminarPedido() {
-		// TODO Auto-generated method stub
-		
-	}
+	public String solicitarPedido(Pedido pedido) {
 
-	@Override
-	public void modificarPedido() {
-		// TODO Auto-generated method stub
-		
+		Firebase.setAndroidContext(context);
+		Firebase ref = new Firebase(PedidoDataFirebase.FIREBASE_URL);
+
+		ref.child("Pedidos").push().setValue(pedido, new Firebase.CompletionListener() {
+			@Override
+			public void onComplete(FirebaseError firebaseError, Firebase firebase) {
+				if (firebaseError != null) {
+					estadoTransaccion = "Data could not be saved. " + firebaseError.getMessage();
+				} else {
+					estadoTransaccion = "Data saved successfully.";
+				}
+			}
+
+		});
+
+		return  estadoTransaccion;
 	}
 
 }

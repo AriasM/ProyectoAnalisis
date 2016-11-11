@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void redireccionar(View view){
-		Intent intent = new Intent(this, ConfirmarSolicitudAlimentacionActivity.class);
+		Intent intent = new Intent(this, ConsultarPlatosSolicitarActivity.class);
 		startActivity(intent);
 	}
 

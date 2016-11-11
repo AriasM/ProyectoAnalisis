@@ -6,7 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.peditualmuerzo.ConfirmarSolicitudAlimentacionActivity" >
+    tools:context="com.peditualmuerzo.ConfirmarSolicitudAlimentacionActivity"
+    android:background="@drawable/fondo_histotial">
 
     <TextView
         android:id="@+id/textView1"
@@ -53,37 +54,109 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
-            android:hint="Cantidad..." >
+            android:hint="Cantidad..."
+            android:layout_marginTop="10dp">
 
             <requestFocus />
         </EditText>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/etObservaciones"
+            android:layout_alignLeft="@+id/linearLayoutPlatoSeleccionado"
+            android:text="@string/Observaciones"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="7dp" />
+
+        <EditText
+            android:id="@+id/etObservaciones"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:hint="Observaciones..."
+            android:singleLine="true"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/etObservaciones"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_centerVertical="true"
-        android:ems="10" />
 
     <Button
         android:id="@+id/btnSolicitar"
         style="@style/buttonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etObservaciones"
+        android:text="@string/Solicitar"
+        android:onClick="solicitarPedido"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="58dp"
-        android:text="@string/Solicitar" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayoutPlatoSeleccionadoOpcional"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/etObservaciones"
-        android:layout_alignLeft="@+id/linearLayoutPlatoSeleccionado"
-        android:text="@string/Observaciones"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:orientation="vertical"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/linearLayoutPlatoSeleccionado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewOpcional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PlatoSolicitado"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/tvPlatoASolicitarOpcional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.54"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etCantidadPlatoOpcional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Cantidad..." >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView3Opcional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/etObservaciones"
+            android:layout_alignLeft="@+id/linearLayoutPlatoSeleccionado"
+            android:text="@string/Observaciones"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/etObservacionesPlatoOpcional"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:hint="Observaciones..."
+            android:singleLine="true"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
 
 </RelativeLayout>

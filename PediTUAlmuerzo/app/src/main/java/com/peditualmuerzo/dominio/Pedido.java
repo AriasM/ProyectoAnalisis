@@ -25,14 +25,6 @@ public class Pedido implements Serializable {
 		this.idPedido = idPedido;
 	}
 
-	public String getEstadoEntrega() {
-		return estadoEntrega;
-	}
-
-	public void setEstadoEntrega(String estadoEntrega) {
-		this.estadoEntrega = estadoEntrega;
-	}
-
 	public List<ItemPedido> getItems() {
 		return items;
 	}

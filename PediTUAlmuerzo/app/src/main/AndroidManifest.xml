@@ -36,7 +36,13 @@
             android:label="@string/title_activity_historial" />
         <activity
             android:name=".DetallesPedidoActivity"
-            android:label="@string/title_activity_detalles_pedido"></activity>
+            android:label="@string/title_activity_detalles_pedido" />
+        <activity
+            android:name=".ConsultarPlatosSolicitarActivity"
+            android:label="@string/title_activity_consultar_platos_solicitar" />
+        <activity
+            android:name=".ModificarPedidoRealizadoActivity"
+            android:label="@string/title_activity_modificar_pedido_realizado"></activity>
     </application>
 
 </manifest>

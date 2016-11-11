@@ -1,7 +1,7 @@
 package com.peditualmuerzo.dataAccess;
 
+import com.peditualmuerzo.dominio.Pedido;
+
 public interface PedidoData {
-	public void insertarPedido();
-	public void eliminarPedido();
-	public void modificarPedido();
+	public String solicitarPedido(Pedido pedido);
 }

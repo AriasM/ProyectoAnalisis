@@ -16,5 +16,9 @@
     <string name="SolicitarActivity">Solicitud de alimentación</string>
     <string name="title_activity_historial">HistorialActivity</string>
     <string name="title_activity_detalles_pedido">DetallesPedidoActivity</string>
+    <string name="title_activity_consultar_platos_solicitar">Platos del día</string>
+    <string name="titulo_plato_dia">Plato del día</string>
+    <string name="title_activity_modificar_pedido_realizado">Modifica tu pedido</string>
+    <string name="title_modificar_pedido">Pedido a modificar</string>
 
 </resources>
