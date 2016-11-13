@@ -20,5 +20,6 @@
     <string name="titulo_plato_dia">Plato del día</string>
     <string name="title_activity_modificar_pedido_realizado">Modifica tu pedido</string>
     <string name="title_modificar_pedido">Pedido a modificar</string>
+    <string name="btnModificar">Modificar</string>
 
 </resources>

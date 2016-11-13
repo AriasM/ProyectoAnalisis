@@ -34,7 +34,7 @@
 
         <Button
             android:id="@+id/btnACenas"
-            android:onClick="redireccionar"
+            android:onClick="redireccionarModificacion"
             android:textColor="#660808"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

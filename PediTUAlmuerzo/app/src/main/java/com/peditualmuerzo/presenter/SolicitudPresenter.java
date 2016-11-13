@@ -19,4 +19,8 @@ public class SolicitudPresenter {
         return  pedidoDataView.solicitarPedido(pedido);
     }
 
+    public void modificarPedido(Pedido pedido){
+        pedidoDataView.modificarPedido(pedido);
+    }
+
 }

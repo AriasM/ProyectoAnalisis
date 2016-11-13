@@ -40,4 +40,12 @@ public class PedidoDataFirebase implements PedidoData{
 		return  estadoTransaccion;
 	}
 
+	@Override
+	public void modificarPedido(Pedido pedido) {
+
+		Firebase.setAndroidContext(context);
+		Firebase ref = new Firebase(PedidoDataFirebase.FIREBASE_URL);
+
+		ref.child("Pedidos").child(pedido.getIdPedido()).setValue(pedido);
+	}
 }
