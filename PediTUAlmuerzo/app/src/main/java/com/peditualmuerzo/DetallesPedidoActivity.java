@@ -1,9 +1,12 @@
 package com.peditualmuerzo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -42,6 +45,30 @@ public class DetallesPedidoActivity extends Activity {
         ref = FirebaseDatabase.getInstance().getReference();
         mensajeRef = ref.child("Platos");
         pedido = (Pedido) getIntent().getExtras().getSerializable("pedido");
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.detalles_pedido, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        switch (id){
+
+            case R.id.action_detallesDelPedidos:
+                Intent intent = new Intent(this, ModificarPedidoRealizadoActivity.class);
+                intent.putExtra("pedido", pedido);
+                startActivity(intent);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void onStart (){

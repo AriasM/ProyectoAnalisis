@@ -3,7 +3,8 @@
 
     <string name="app_name">Pedi tU Almuerzo</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_historialDePedidos">Historial de pedidos</string>
+    <string name="action_detallesDelPedido">Modificar pedido</string>
     <string name="title_activity_confirmar_solicitud_alimentacion">ConfirmarSolicitudAlimentacionActivity</string>
     <string name="btnAlmuerzos">Almuerzos</string>
     <string name="btnDesayunos">Desayunos</string>

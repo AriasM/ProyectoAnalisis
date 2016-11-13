@@ -18,7 +18,6 @@
 
         <Button
             android:text="@string/btnDesayunos"
-            android:onClick="redireccionarHistorial"
             android:textColor="#660808"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
