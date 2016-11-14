@@ -83,6 +83,7 @@ public class HistorialActivity extends Activity {
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
+                Toast.makeText(HistorialActivity.this, "No se ha podido contactar con el catálogo de pedidos", Toast.LENGTH_LONG).show();
             }
         });
     }

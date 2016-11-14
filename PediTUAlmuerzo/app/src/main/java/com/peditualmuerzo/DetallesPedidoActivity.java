@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -106,6 +107,7 @@ public class DetallesPedidoActivity extends Activity {
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
+                Toast.makeText(DetallesPedidoActivity.this, "No se ha podido contactar con el catálogo de platos", Toast.LENGTH_LONG).show();
             }
         });
     }
