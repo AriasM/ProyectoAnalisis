@@ -58,10 +58,13 @@ public class ConfirmarSolicitudAlimentacionActivity extends Activity {
 					tvPlatoElegido = (TextView) findViewById(R.id.tvPlatoASolicitar);
 					tvPlatoElegido.setText(platoActual.getNombrePlato());
 				}
-				else{
+				else if(platoActual.isOpcional()){
 					//layoutPlatoOpcional.setVisibility(View.VISIBLE);
 					tvPlatoOpcionalElegido = (TextView) findViewById(R.id.tvPlatoASolicitarOpcional);
 					tvPlatoOpcionalElegido.setText(platoActual.getNombrePlato());
+				}
+				else{
+					layoutPlatoOpcional.setVisibility(View.INVISIBLE);
 				}
 			}
 		}

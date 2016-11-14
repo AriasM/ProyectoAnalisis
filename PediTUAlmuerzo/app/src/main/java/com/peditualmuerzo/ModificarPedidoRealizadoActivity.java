@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +19,7 @@ public class ModificarPedidoRealizadoActivity extends Activity {
 
     private EditText etComentariosPrincipal, etCantidadPrincipal, etComentariosOpcional, etCantidadOpcional;
     private TextView tvPlatoModificar, tvPlatoOpcionalModificar;
+    private LinearLayout layoutPlatoOpcional;
     private Pedido pedido;
 
     @Override
@@ -31,10 +33,11 @@ public class ModificarPedidoRealizadoActivity extends Activity {
         etComentariosOpcional = (EditText) findViewById(R.id.etObservacionesPlatoOpcional);
         tvPlatoModificar = (TextView) findViewById(R.id.tvPlatoASolicitar);
         tvPlatoOpcionalModificar = (TextView) findViewById(R.id.tvPlatoASolicitarOpcional);
+        layoutPlatoOpcional = (LinearLayout) findViewById(R.id.linearLayoutPlatoSeleccionadoOpcional);
 
         //TODO traer el pedido del historial
-        pedido = new Pedido();
-        pedido.setIdPedido("-KWKF6m2B56-RFY-vRoj");
+        pedido = (Pedido) getIntent().getExtras().getSerializable("pedido");
+        /*pedido.setIdPedido("-KWKF6m2B56-RFY-vRoj");
         ItemPedido itemPedido = new ItemPedido();
         itemPedido.setCantidad(2);
         itemPedido.setComentarios("Prueba 4");
@@ -43,18 +46,21 @@ public class ModificarPedidoRealizadoActivity extends Activity {
         plato.setNombrePlato("Arroz con pollo");
         plato.setIdPlato("bajsibfia");
         itemPedido.setPlato(plato);
-        pedido.getItems().add(itemPedido);
+        pedido.getItems().add(itemPedido);*/
 
         for(ItemPedido itemPedidoActual : pedido.getItems()){
             if(!itemPedidoActual.getPlato().isOpcional()){
-                tvPlatoModificar.setText(itemPedido.getPlato().getNombrePlato());
+                tvPlatoModificar.setText(itemPedidoActual.getPlato().getNombrePlato());
                 etCantidadPrincipal.setText(itemPedidoActual.getCantidad()+"", TextView.BufferType.EDITABLE);
                 etComentariosPrincipal.setText(itemPedidoActual.getComentarios());
             }
-            else{
-                tvPlatoOpcionalModificar.setText(itemPedido.getPlato().getNombrePlato());
+            else if (itemPedidoActual.getPlato().isOpcional()){
+                tvPlatoOpcionalModificar.setText(itemPedidoActual.getPlato().getNombrePlato());
                 etCantidadOpcional.setText(itemPedidoActual.getCantidad()+"", TextView.BufferType.EDITABLE);
                 etComentariosOpcional.setText(itemPedidoActual.getComentarios());
+            }
+            else{
+                layoutPlatoOpcional.setVisibility(View.INVISIBLE);
             }
         }
     }
