@@ -6,7 +6,7 @@
     <string name="lbPrimerApellido">Primer Apellido:</string>
     <string name="lbSegundoApellido">Segundo Apellido:</string>
     <string name="lbCorreoElectronico">Correo Electrónico:</string>
-    <string name="lbNombreUsuario">Nombre Usuario:</string>
+    <string name="lbUsuario">Usuario:</string>
     <string name="lbContrasena">Contraseña:</string>
     <string name="btnRegistrar">Registrar Ahora</string>
     <string name="title_activity_registro">Registro de usuarios</string>
