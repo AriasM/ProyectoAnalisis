@@ -42,7 +42,13 @@
             android:label="@string/title_activity_consultar_platos_solicitar" />
         <activity
             android:name=".ModificarPedidoRealizadoActivity"
-            android:label="@string/title_activity_modificar_pedido_realizado"></activity>
+            android:label="@string/title_activity_modificar_pedido_realizado" />
+        <activity
+            android:name=".RegistroActivity"
+            android:label="@string/title_activity_registro" />
+        <activity
+            android:name=".SeleccionTiempoAlimentacionActivity"
+            android:label="@string/title_activity_seleccion_tiempo_alimentacion"></activity>
     </application>
 
 </manifest>

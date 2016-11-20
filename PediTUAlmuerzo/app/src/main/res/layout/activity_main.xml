@@ -6,8 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.peditualmuerzo.MainActivity"
-    android:background="@drawable/fondo">
+    android:background="@drawable/fondo"
+    tools:context="com.peditualmuerzo.MainActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -17,41 +17,40 @@
         android:layout_marginTop="128dp">
 
         <Button
-            android:text="@string/btnDesayunos"
+            android:text="@string/btnIngresar"
             android:textColor="#660808"
+            android:onClick="irSeleccionTiempoAlimentacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnDesayunos" />
+            android:id="@+id/btnIngresar" />
 
         <Button
-            android:text="@string/btnAlmuerzos"
+            android:text="@string/btnInicioSesion"
             android:textColor="#660808"
             android:layout_width="match_parent"
-            android:onClick="redireccionar"
+            android:onClick="irSeleccionTiempoAlimentacion"
             android:layout_height="wrap_content"
-            android:id="@+id/btnAlmuerzos" />
+            android:id="@+id/btnIniciarSesion" />
 
         <Button
-            android:id="@+id/btnACenas"
-            android:onClick="redireccionarModificacion"
+            android:onClick="irRegistro"
             android:textColor="#660808"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btnACenas"
-            android:layout_marginBottom="100dp"
-            android:layout_alignParentBottom="true"
-            android:linksClickable="false" />
+            android:text="@string/btnRegistro"
+            android:id="@+id/btnRegistro"
+            android:layout_marginBottom="100dp" />
 
     </LinearLayout>
 
     <TextView
-        android:text="@string/TextoInicio"
+        android:text="@string/lbBienvenida"
         android:textColor="#660808"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
-        android:id="@+id/mensajeTextView" />
+        android:id="@+id/MensajeBienvenida" />
 
 </RelativeLayout>

@@ -53,6 +53,12 @@
         <activity
             android:name="com.peditualmuerzo.ModificarPedidoRealizadoActivity"
             android:label="@string/title_activity_modificar_pedido_realizado" />
+        <activity
+            android:name="com.peditualmuerzo.RegistroActivity"
+            android:label="@string/title_activity_registro" />
+        <activity
+            android:name="com.peditualmuerzo.SeleccionTiempoAlimentacionActivity"
+            android:label="@string/title_activity_seleccion_tiempo_alimentacion" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

@@ -8,12 +8,17 @@
     <string name="PlatoSolicitado">Plato: </string>
     <string name="Solicitar">Solicitar</string>
     <string name="SolicitarActivity">Solicitud de alimentación</string>
-    <string name="TextoInicio">¿Aún no sabes que comer?</string>
-    <string name="action_settings">Settings</string>
-    <string name="app_name">Pedi tU Almuerzo</string>
+    <string name="action_detallesDelPedido">Modificar pedido</string>
+    <string name="action_historialDePedidos">Historial de pedidos</string>
+    <string name="app_name">Sabor a U</string>
     <string name="btnACenas">Cenas</string>
     <string name="btnAlmuerzos">Almuerzos</string>
     <string name="btnDesayunos">Desayunos</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="btnInicioSesion">Iniciar Sesión</string>
+    <string name="btnModificar">Modificar</string>
+    <string name="btnRegistrar">Registrar Ahora</string>
+    <string name="btnRegistro">Registrar</string>
     <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. Please try again.</string>
     <string name="default_web_client_id" translatable="false">848893801760-48872q6g8em4f61vio13o62pomuhsooh.apps.googleusercontent.com</string>
     <string name="firebase_database_url" translatable="false">https://pedi-tu-almuerzo-c34ef.firebaseio.com</string>
@@ -22,10 +27,23 @@
     <string name="google_app_id" translatable="false">1:848893801760:android:53976342d9376a74</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDMpWm9zKmLY819gOzuhf4sJ29WikR0bHg</string>
     <string name="google_storage_bucket" translatable="false">pedi-tu-almuerzo-c34ef.appspot.com</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="lbBienvenida">Bienvenido a Sabor a U</string>
+    <string name="lbContrasena">Contraseña:</string>
+    <string name="lbCorreoElectronico">Correo Electrónico:</string>
+    <string name="lbInicio">¿Aún no sabes que comer?</string>
+    <string name="lbNombre">Nombre:</string>
+    <string name="lbNombreUsuario">Nombre Usuario:</string>
+    <string name="lbPrimerApellido">Primer Apellido:</string>
+    <string name="lbSegundoApellido">Segundo Apellido:</string>
     <string name="title_activity_confirmar_solicitud_alimentacion">ConfirmarSolicitudAlimentacionActivity</string>
-    <string name="title_activity_detalles_pedido">DetallesPedidoActivity</string>
-    <string name="title_activity_historial">HistorialActivity</string>
+    <string name="title_activity_consultar_platos_solicitar">Platos del día</string>
+    <string name="title_activity_detalles_pedido">Detalles del Pedido</string>
+    <string name="title_activity_historial">Historial Completo</string>
+    <string name="title_activity_modificar_pedido_realizado">Modifica tu pedido</string>
+    <string name="title_activity_registro">Registro de usuarios</string>
+    <string name="title_activity_seleccion_tiempo_alimentacion">Tiempos de Alimentación</string>
+    <string name="title_modificar_pedido">Pedido a modificar</string>
+    <string name="titulo_plato_dia">Plato del día</string>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
         
     </style>

@@ -3,11 +3,4 @@
     tools:context="com.peditualmuerzo.MainActivity"
      >
 
-    <item
-        android:id="@+id/action_historialDePedidos"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_historialDePedidos"
-        />
-
 </menu>

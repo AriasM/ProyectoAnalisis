@@ -14,8 +14,6 @@ import com.peditualmuerzo.dataAccess.PedidoDataFirebase;
 
 public class MainActivity extends Activity {
 
-	private TextView  mensajeTextView;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -31,30 +29,13 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-
-		int id = item.getItemId();
-
-		switch (id){
-
-			case R.id.action_historialDePedidos:
-				Intent intent = new Intent(this, HistorialActivity.class);
-				startActivity(intent);
-				return true;
-
-			default:
-				return super.onOptionsItemSelected(item);
-		}
-	}
-
-	public void redireccionar(View view){
-		Intent intent = new Intent(this, ConsultarPlatosSolicitarActivity.class);
+	public void irRegistro(View view){
+		Intent intent = new Intent(this, RegistroActivity.class);
 		startActivity(intent);
 	}
 
-	public void redireccionarModificacion(View view){
-		Intent intent = new Intent(this, ModificarPedidoRealizadoActivity.class);
+	public void irSeleccionTiempoAlimentacion(View view){
+		Intent intent = new Intent(this, SeleccionTiempoAlimentacionActivity.class);
 		startActivity(intent);
 	}
 }
