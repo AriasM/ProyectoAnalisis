@@ -22,6 +22,7 @@ import com.peditualmuerzo.presenter.UsuarioPresenter;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 public class RegistroActivity extends Activity {
 
@@ -49,7 +50,7 @@ public class RegistroActivity extends Activity {
 
     public void nuevoUsuarioServicio(View view){
 
-        UsuarioDataFireBase usuarioData = new UsuarioDataFireBase();
+        UsuarioDataFireBase usuarioData = new UsuarioDataFireBase(this);
         UsuarioPresenter usuarioPresenter = new UsuarioPresenter(usuarioData);
 
         UsuarioServicio usuarioServicio = new UsuarioServicio();
@@ -62,8 +63,14 @@ public class RegistroActivity extends Activity {
         usuarioServicio.setContrasena(etContrasena.getText().toString().trim());
 
         String resultado = usuarioPresenter.nuevoUsuario(usuarioServicio);
+        Toast.makeText(RegistroActivity.this,resultado, Toast.LENGTH_LONG).show();
 
-        Toast.makeText(RegistroActivity.this, resultado, Toast.LENGTH_SHORT).show();
+        etNombre.setText("");
+        etPrimerApellido.setText("");
+        etSegundoApellido.setText("");
+        etCorreoElectronico.setText("");
+        etUsuario.setText("");
+        etContrasena.setText("");
     }
 
 }
