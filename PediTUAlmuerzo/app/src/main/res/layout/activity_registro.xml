@@ -1,164 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_registro"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:padding="4dp"
     tools:context="com.peditualmuerzo.RegistroActivity"
     android:background="@drawable/fondo_histotial">
 
-    <TextView
-        android:text="@string/lbUsuario"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvNombreUsuario"
-        android:layout_below="@+id/tvCorreo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="31dp"
-        android:layout_toLeftOf="@+id/editText7"
-        android:layout_toStartOf="@+id/editText7" />
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
 
-    <EditText
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/tvNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNombre" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Ejemplo: Víctor"
+                android:ems="10"
+                android:id="@+id/etNombre" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText8"
-        android:layout_alignBaseline="@+id/tvContrasena"
-        android:layout_alignBottom="@+id/tvContrasena"
-        android:layout_alignLeft="@+id/editText7"
-        android:layout_alignStart="@+id/editText7" />
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
 
-    <EditText
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/tvPrimerApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrimerApellido" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Ejemplo: Salvatierra"
+                android:ems="10"
+                android:id="@+id/etPrimerApellido" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText7"
-        android:layout_alignBaseline="@+id/tvNombreUsuario"
-        android:layout_alignBottom="@+id/tvNombreUsuario"
-        android:layout_alignLeft="@+id/editText6"
-        android:layout_alignStart="@+id/editText6" />
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
 
-    <EditText
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/tvSegundoApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSegundoApellido" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Ejemplo: Mora"
+                android:ems="10"
+                android:id="@+id/etSegundoApellido" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editText6"
-        android:layout_alignBaseline="@+id/tvCorreo"
-        android:layout_alignBottom="@+id/tvCorreo"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3" />
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
 
-    <EditText
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/tvCorreoElectronico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCorreoElectronico" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Ejemplo: Victor@gmail.com"
+                android:ems="10"
+                android:id="@+id/etCorreoElectronico" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_alignBaseline="@+id/tvNombre"
-        android:layout_alignBottom="@+id/tvNombre"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
 
-    <EditText
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/tvUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvUsuario" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Ejemplo: SMVictor"
+                android:ems="10"
+                android:id="@+id/etUsuario" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:layout_marginTop="13dp"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
 
-    <EditText
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/tvContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContrasena" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Ejemplo: abc123"
+                android:ems="10"
+                android:id="@+id/etContrasena" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_alignBaseline="@+id/tvApellidoDos"
-        android:layout_alignBottom="@+id/tvApellidoDos"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
 
-    <TextView
-        android:text="@string/lbSegundoApellido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:id="@+id/tvApellidoDos"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/editText3"
-        android:layout_toStartOf="@+id/editText3" />
+        <Button
+            android:text="@string/btnRegistrar"
+            android:onClick="nuevoUsuarioServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegistrar" />
 
-    <TextView
-        android:text="@string/lbCorreoElectronico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/tvCorreo"
-        android:layout_below="@+id/editText3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/editText6"
-        android:layout_toStartOf="@+id/editText6" />
+    </LinearLayout>
 
-    <TextView
-        android:text="@string/lbPrimerApellido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvApellidoUno"
-        android:layout_alignBaseline="@+id/editText2"
-        android:layout_alignBottom="@+id/editText2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/editText2"
-        android:layout_toStartOf="@+id/editText2" />
-
-    <TextView
-        android:text="@string/lbContrasena"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvContrasena"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/editText7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/editText8"
-        android:layout_toStartOf="@+id/editText8" />
-
-    <TextView
-        android:text="@string/lbNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvNombre"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="11dp" />
-
-    <Button
-        android:text="@string/btnRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnRegistro"
-        android:layout_marginTop="53dp"
-        android:layout_below="@+id/editText8"
-        android:layout_centerHorizontal="true" />
-
-</RelativeLayout>
+</LinearLayout>

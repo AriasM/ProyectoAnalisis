@@ -8,12 +8,13 @@ import java.io.Serializable;
 
 public abstract class Usuario implements Serializable{
 
-    private String nombreUsuario;
-    private String contrasena;
+    private String idUsuario;
     private String nombre;
     private String primerApellido;
     private String segundoApellido;
-    private String idUsuario;
+    private String correo;
+    private String nombreUsuario;
+    private String contrasena;
 
     public String getIdUsuario() {
         return idUsuario;
@@ -25,6 +26,14 @@ public abstract class Usuario implements Serializable{
 
     public Usuario(){
 
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
     public String getNombreUsuario() {

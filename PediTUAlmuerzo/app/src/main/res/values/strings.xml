@@ -2,12 +2,12 @@
 <resources>
 
     //Textos de la pagina de registro
-    <string name="lbNombre">Nombre:</string>
-    <string name="lbPrimerApellido">Primer Apellido:</string>
-    <string name="lbSegundoApellido">Segundo Apellido:</string>
-    <string name="lbCorreoElectronico">Correo Electrónico:</string>
-    <string name="lbUsuario">Usuario:</string>
-    <string name="lbContrasena">Contraseña:</string>
+    <string name="tvNombre">Nombre                 :</string>
+    <string name="tvPrimerApellido">Primer Apellido:</string>
+    <string name="tvSegundoApellido">Segundo Apellido:</string>
+    <string name="tvCorreoElectronico">Correo Eletrónico:</string>
+    <string name="tvUsuario">Usuario:</string>
+    <string name="tvContrasena">Contraseña:</string>
     <string name="btnRegistrar">Registrar Ahora</string>
     <string name="title_activity_registro">Registro de usuarios</string>
 

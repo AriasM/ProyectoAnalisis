@@ -28,13 +28,7 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDMpWm9zKmLY819gOzuhf4sJ29WikR0bHg</string>
     <string name="google_storage_bucket" translatable="false">pedi-tu-almuerzo-c34ef.appspot.com</string>
     <string name="lbBienvenida">Bienvenido a Sabor a U</string>
-    <string name="lbContrasena">Contraseña:</string>
-    <string name="lbCorreoElectronico">Correo Electrónico:</string>
     <string name="lbInicio">¿Aún no sabes que comer?</string>
-    <string name="lbNombre">Nombre:</string>
-    <string name="lbPrimerApellido">Primer Apellido:</string>
-    <string name="lbSegundoApellido">Segundo Apellido:</string>
-    <string name="lbUsuario">Usuario:</string>
     <string name="title_activity_confirmar_solicitud_alimentacion">ConfirmarSolicitudAlimentacionActivity</string>
     <string name="title_activity_consultar_platos_solicitar">Platos del día</string>
     <string name="title_activity_detalles_pedido">Detalles del Pedido</string>
@@ -44,6 +38,12 @@
     <string name="title_activity_seleccion_tiempo_alimentacion">Tiempos de Alimentación</string>
     <string name="title_modificar_pedido">Pedido a modificar</string>
     <string name="titulo_plato_dia">Plato del día</string>
+    <string name="tvContrasena">Contraseña:</string>
+    <string name="tvCorreoElectronico">Correo Eletrónico:</string>
+    <string name="tvNombre">Nombre                 :</string>
+    <string name="tvPrimerApellido">Primer Apellido:</string>
+    <string name="tvSegundoApellido">Segundo Apellido:</string>
+    <string name="tvUsuario">Usuario:</string>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
         
     </style>
