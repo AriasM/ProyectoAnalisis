@@ -48,4 +48,12 @@ public class PedidoDataFirebase implements PedidoData{
 
 		ref.child("Pedidos").child(pedido.getIdPedido()).setValue(pedido);
 	}
+
+	@Override
+	public void cancelarPedido(Pedido pedido) {
+		Firebase.setAndroidContext(context);
+		Firebase ref = new Firebase(PedidoDataFirebase.FIREBASE_URL);
+
+		ref.child("Pedidos").child(pedido.getIdPedido()).child("estado").setValue("cancelado");
+	}
 }

@@ -1,6 +1,8 @@
 package com.peditualmuerzo;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
@@ -19,10 +21,13 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.peditualmuerzo.dataAccess.PedidoData;
+import com.peditualmuerzo.dataAccess.PedidoDataFirebase;
 import com.peditualmuerzo.dominio.ItemPedido;
 import com.peditualmuerzo.dominio.ItemPlatoComponente;
 import com.peditualmuerzo.dominio.Pedido;
 import com.peditualmuerzo.dominio.Plato;
+import com.peditualmuerzo.presenter.SolicitudPresenter;
 
 import java.util.Iterator;
 import java.util.List;
@@ -65,6 +70,35 @@ public class DetallesPedidoActivity extends Activity {
                 Intent intent = new Intent(this, ModificarPedidoRealizadoActivity.class);
                 intent.putExtra("pedido", pedido);
                 startActivity(intent);
+                return true;
+            case R.id.action_cancelarPedido:
+                AlertDialog.Builder mensajeConfirmacion = new AlertDialog.Builder(this);
+                mensajeConfirmacion.setTitle("Importante");
+                mensajeConfirmacion.setMessage("¿De verdad desea cancelar el pedido?");
+                mensajeConfirmacion.setCancelable(false);
+                mensajeConfirmacion.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast t = Toast.makeText(DetallesPedidoActivity.this, "¡Perfecto! Excelente decisión", Toast.LENGTH_SHORT);
+                        t.show();
+                    }
+                });
+                mensajeConfirmacion.setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        PedidoData pedidoData = new PedidoDataFirebase(DetallesPedidoActivity.this);
+                        SolicitudPresenter sPresenter = new SolicitudPresenter(pedidoData);
+                        sPresenter.cancelarPedido(pedido);
+
+                        Toast t = Toast.makeText(DetallesPedidoActivity.this, "Pedido cancelado exitosamente", Toast.LENGTH_SHORT);
+                        t.show();
+
+                        Intent intent = new Intent(DetallesPedidoActivity.this, HistorialActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                mensajeConfirmacion.show();
                 return true;
 
             default:

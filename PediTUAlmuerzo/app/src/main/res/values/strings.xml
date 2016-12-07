@@ -27,6 +27,7 @@
 
     //Textos del detalle de pedido
     <string name="title_activity_detalles_pedido">Detalles del Pedido</string>
+    <string name="title_cancelar_pedido">Cancelar pedido</string>
 
     //Textos de la pagina principal
      <string name="title_activity_seleccion_tiempo_alimentacion">Tiempos de Alimentación</string>

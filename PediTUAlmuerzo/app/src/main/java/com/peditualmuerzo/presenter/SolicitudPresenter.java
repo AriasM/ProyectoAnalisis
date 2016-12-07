@@ -23,4 +23,8 @@ public class SolicitudPresenter {
         pedidoDataView.modificarPedido(pedido);
     }
 
+    public void cancelarPedido(Pedido pedido){
+        pedidoDataView.cancelarPedido(pedido);
+    }
+
 }
